@@ -20,7 +20,7 @@ namespace gitFeladat
         static int f02(int[] tomb)
         {
             int counter = 0;
-            for (int i = 0; i < tomb.Length; i++) 
+            for (int i = 0; i < tomb.Length; i++)
             {
                 if (tomb[i] % 2 == 0)
                 {
@@ -56,6 +56,18 @@ namespace gitFeladat
                 }
             }
             return paratlanok;
+        }
+
+        static void f05(int[] tomb)
+        {
+            Console.WriteLine("Ennyi db pozitív szám van a tömbben: " + f02(tomb));
+            Console.WriteLine("A tömb elemeinek átlaga: " + f03(tomb));
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+            foreach (int item in f04(tomb))
+            {
+                Console.Write(item + ", ");
+            }
+            Console.WriteLine();
         }
 
         static void Main(string[] args)
