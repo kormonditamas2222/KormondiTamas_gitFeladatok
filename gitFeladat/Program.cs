@@ -30,6 +30,17 @@ namespace gitFeladat
             return counter;
         }
 
+        static double f03(int[] tomb)
+        {
+            double avg = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                avg += tomb[i];
+            }
+            avg /= tomb.Length;
+            return avg;
+        }
+
         static void Main(string[] args)
         {
         }
