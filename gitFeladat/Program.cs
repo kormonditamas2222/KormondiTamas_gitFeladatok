@@ -72,6 +72,9 @@ namespace gitFeladat
 
         static void Main(string[] args)
         {
+            int[] szamok = new int[10];
+            f01(szamok);
+            f05(szamok);
         }
     }
 }
