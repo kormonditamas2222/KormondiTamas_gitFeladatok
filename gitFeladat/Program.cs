@@ -17,6 +17,19 @@ namespace gitFeladat
             }
         }
 
+        static int f02(int[] tomb)
+        {
+            int counter = 0;
+            for (int i = 0; i < tomb.Length; i++) 
+            {
+                if (tomb[i] % 2 == 0)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+
         static void Main(string[] args)
         {
         }
